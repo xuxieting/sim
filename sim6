@@ -1,3 +1,5 @@
+install_github('wwrechard/screening')
+library(screening)
 n = 20
 p = 100
 times = 100
