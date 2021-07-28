@@ -1,3 +1,5 @@
+install_github('wwrechard/screening')
+library(screening)
 n = 1000  #data size
 p = 10 #data dim
 times = 100  #rerun times
