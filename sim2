@@ -1,5 +1,7 @@
 library(MASS)
- p=1000;n=20;r=0.3
+install_github('wwrechard/screening')
+library(screening)
+p=1000;n=20;r=0.3
  set.seed(1)
  lag<-numeric(100)
  for(j in 1:100){
