@@ -1,4 +1,3 @@
-  
 library(glmnet)
 library(devtools)
 install_github('wwrechard/screening')
