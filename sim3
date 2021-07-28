@@ -1,4 +1,6 @@
 library(MASS)
+install_github('wwrechard/screening')
+library(screening)
  p=100;n=20;r=0.3
  lag<-numeric(100)
  for(j in 1:100){
