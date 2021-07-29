@@ -23,7 +23,7 @@ for(i in 1:5){
   beta[i]<-5
 }
 r.square<-0.5
-sigma.square<-var(x%*%beta)*r.square
+sigma.square<-var(x%*%beta)/r.square
 y <-X%*%beta+rnorm(n,0,sqrt(sigma.square))   #拟合回归方程
 output= screening(X, y, method = 'holp', num.select = n, ebic = TRUE)$screen
 lag[j]<-sum(c(1,2,3,4,5) %in% output)==5
