@@ -22,7 +22,7 @@ for(i in 1:15){
    }
 
 r.square<-0.5
-sigma.square<-var(x%*%beta)*r.square
+sigma.square<-var(x%*%beta)/r.square
 y <-x%*%beta+rnorm(n,0,sqrt(sigma.square)) ##拟合方程
 output=screening(x, y, method = 'holp', num.select = n, ebic = TRUE)$screen
 
