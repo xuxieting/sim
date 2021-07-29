@@ -29,7 +29,7 @@ sim4 = function(p,k){
   return(lag)
 }
 
-result = foreach(i=1:10, .combine = "rbind") %do% sim4(p,k) ##rerun 100 times
+result = foreach(i=1:100, .combine = "rbind") %do% sim4(p,k) ##rerun 100 times
 
 sum(result)/100
 
